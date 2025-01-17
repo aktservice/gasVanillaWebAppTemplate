@@ -1,6 +1,6 @@
-# backendGasTemp
+# gasVanillaWebAppTemplate
 
-## GAS を LOCAL で構築する為のテンプレートです
+## GASWebApplication を LOCAL で構築する為のテンプレートです
 
 ### 使用しているソフト等
 
@@ -28,12 +28,14 @@ git をインストール(要管理者権限)
 [git](https://git-scm.com/)  
 3 点をインストール後に
 
-```bash
+1. このプロジェクトをテンプレートに github 上に Repository を作成
+1. Repository の URL をコピー
 
+```bash
 #bash or powershell
 # git bash を開いて下記のコマンドを打ち込みして下さい（コピペＯＫ）
-git clone https://github.com/yoshikoro/backendGasTemp.git
-cd backendGasTemp
+git clone コピーしたURLを貼り付け
+cd  yourRepoName
 npm install
 code ./
 #ここでVsCodeが開くのでそこから開発
@@ -44,4 +46,13 @@ clasp login
 clasp open
 # .clasp.jsonに記載されたIdを開くので確認後
 clasp push
+
+#.clasp.jsonをRepositoryにPUSHしたくないので
+#パスは適宜変更してください
+git rm --cached .clasp.json
+#開発をRemoteへ保存
+git add ./
+# initial commit
+git commit -m "this development commit message"
+git push origin main
 ```

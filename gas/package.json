@@ -1,10 +1,10 @@
 {
-  "name": "backend",
+  "name": "gas-vanilla-webapp",
   "version": "1.0.0",
-  "description": "backend for gas",
+  "description": "use gas",
   "main": "index.js",
   "dependencies": {
-    "@types/google-apps-script": "^1.0.86"
+    "@types/google-apps-script": "^1.0.91"
   },
   "devDependencies": {},
   "scripts": {
