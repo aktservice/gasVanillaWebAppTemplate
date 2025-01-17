@@ -46,6 +46,11 @@ clasp login
 clasp open
 # .clasp.jsonに記載されたIdを開くので確認後
 clasp push
+# ウェブアプリとしてデプロイ
+clasp deploy --description "description"
+# open webapp
+clasp open --webapp
+# version を聞かれるので適宜
 
 #.clasp.jsonをRepositoryにPUSHしたくないので
 #パスは適宜変更してください
